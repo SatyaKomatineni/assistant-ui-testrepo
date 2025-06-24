@@ -1,0 +1,24 @@
+6/24/25:
+React Component Model
+**********************
+1. What can you tell me about the comprehensive component model of react?
+2. How does it paint data from a server
+3. How does it update state on a server
+4. what does MVC look like
+
+Next.js
+********************
+1. How does client state and server state stay in sync
+2. How does one component update server state and another component make use of it?
+3. Why does next.js and similar framewors do not manage "session" like servlets? it is not hard to do, then why they chose not to?
+4. How do routes workspace
+5. What is the diff between client component and a server component?
+6. how do you decide if a component should be a client? or a server?
+7. Can you mix client and server components?
+8. what are the guidelines for mixing or not mixing these components?
+
+Findings
+***********************
+1. Next-auth.js (Authorization module for next.js)
+2. By default it will not manage session like Servelets
+3. You can nest client components inside server components, but not the other way around. This lets you combine the best of both worlds in your app.

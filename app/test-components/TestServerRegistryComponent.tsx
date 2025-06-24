@@ -1,3 +1,5 @@
+'use client';
+
 // TestServerRegistryComponent.tsx
 // Client-side component to view (not edit) MCP server registry, with refresh
 import React, { useEffect, useState } from 'react';

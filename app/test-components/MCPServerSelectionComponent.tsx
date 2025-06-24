@@ -1,3 +1,5 @@
+'use client';
+
 // MCPServerSelectionComponent.tsx
 // Client-side component for selecting/enabling/disabling MCP servers
 import React, { useEffect, useState } from 'react';
