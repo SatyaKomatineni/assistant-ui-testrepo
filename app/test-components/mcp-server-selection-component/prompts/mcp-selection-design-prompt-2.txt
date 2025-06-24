@@ -1,0 +1,45 @@
+Goal:
+**********************
+MCPServerSelectionComponent: A client side component
+MCPServerRegistry: A server side Next.js state object
+TestServerRegistryComponent: A client side component that reads the server side MCPServerRegistry
+
+How do they need to interact
+**********************************
+MCPServerRegistry:
+
+1. A list of MCPServerSpec objects
+2. MCPServerSpec: name, id, enabled or not
+3. Accessible as a global state
+4. Initialzed with a few sample MCP Server Specs
+5. Need to be an original source for the MCPServerSelectionComponent to populate that control
+6. Allow to be updated from MCPServerSelectionComponent when enabled/disabled
+7. On demand give access to the TestServerRegistryComponent client
+8. Provide essential logging to monitor the server updates (not too verbose)
+
+MCPServerSelectionComponent:
+
+1. A client side component
+2. Reads the MCPServerRegistry from server to populate its buttons 
+3. The UX for this component is below
+4. A div with set of buttons
+5. Each button has a name and enable or disable
+6. The div will paint the mcp server buttons in a row
+7. Puts a nice border with paddign and margin around the button row
+8. clicking on each mcp server will show to enable or disable depending on state
+9. Use the /component/ui/button.tsx as the button represenation
+10. Find the best approach to update the server side state MCPServerRegistry
+
+TestServerRegistryComponent:
+
+1. Create an identical component to the MCPServerSelectionComponent
+2. Except it will not have onclick to edit the state of the MCP server
+3. There should be an extra button that says "refresh"
+4. On "refresh" it should read its new state of MCP servers from the MCPServerRegistry
+5. The "refresh" button should be spaced out as a new row slightly away from the MCP Server list buttons and centered
+
+Where to create the necessary files fro these controls and server side
+*******************************************
+1. app/test-components folder for client components
+2. pick a correct server side location for the MCPServerRegistry based on Next.js standards
+3. if that is inside the same directory well and good, and if not choose where that ought to be

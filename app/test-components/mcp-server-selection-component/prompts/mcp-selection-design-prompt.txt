@@ -1,0 +1,17 @@
+Goal:
+**********************
+1. A div with set of buttons
+2. Each button has a name and enable or disable
+3. Data
+    1. The data comes from a data object
+    2. class: MCP Server spec
+        attributes: name, id, enabled
+        method: enable(), disable()
+    3. class: MCP Server Spect List:
+        attribute: list of MCP Servers Specs
+        getList()
+        locate(id)
+4. The div will paint the mcp servers in a row
+5. clicking on each mcp server will show to enable or disable depending on state
+6. Make all this a component
+7. Use the /component/ui/button.tsx as the button represenation

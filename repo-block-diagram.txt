@@ -1,0 +1,20 @@
+# assistant-ui-testrepo — Block Diagram (UI, APIs, Server Side)
+
++-------------------+         +-------------------+         +-------------------+
+|                   |         |                   |         |                   |
+|      UI Layer     +-------->+   API Layer       +-------->+   Server/Logic    |
+|                   |         |                   |         |                   |
+|-------------------|         |-------------------|         |-------------------|
+| - app/page.tsx    |         | - app/api/        |         | - lib/utils.ts    |
+| - app/layout.tsx  |         |   (API routes)    |         | - business logic  |
+| - components/     |         |                   |         |   (if any)        |
+|   (ui/,           |         |                   |         |                   |
+|   assistant-ui/)  |         |                   |         |                   |
++-------------------+         +-------------------+         +-------------------+
+
+Legend:
+- UI Layer: All user-facing components and pages (React/Next.js components)
+- API Layer: Next.js API routes (backend endpoints)
+- Server/Logic: Utility functions, business logic, and any server-side code
+
+Data flows from UI → API → Server/Logic and responses flow back in reverse.
