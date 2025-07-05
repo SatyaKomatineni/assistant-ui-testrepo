@@ -1,3 +1,4 @@
+# **************************************************************************
 # start-servers.ps1
 # PowerShell script to control starting, stopping, and listing multiple server processes
 # Author: Satya (update as needed)
@@ -9,6 +10,13 @@
 #   Then run:
 #       Show-ServerFunctions
 #   to see available commands.
+#
+# Future Enhancements:
+# 1. Move server scripts to a persistent location (e.g., a config file or database)
+#
+# Fixes:
+# 1. confirmation prompts for starting/stopping all servers 7/5/2025
+# **************************************************************************
 
 # Global variable to store server info
 $Global:ServerProcesses = @()
@@ -59,6 +67,11 @@ function global:New-ServerSpec {
 
 # Function: Start all servers in parallel
 function global:Start-Servers {
+    $confirm = Read-Host "Are you sure you want to start ALL servers? (yes/no)"
+    if ($confirm -ne 'yes') {
+        Write-Host "Aborted starting all servers." -ForegroundColor Yellow
+        return
+    }
     # Build server specs from the global server scripts list
     $servers = $Global:ServerScripts | ForEach-Object { New-ServerSpec $_ }
     foreach ($srv in $servers) {
@@ -86,6 +99,11 @@ function global:List-Servers {
 
 # Function: Stop all servers
 function global:Stop-Servers {
+    $confirm = Read-Host "Are you sure you want to STOP ALL servers? (yes/no)"
+    if ($confirm -ne 'yes') {
+        Write-Host "Aborted stopping all servers." -ForegroundColor Yellow
+        return
+    }
     foreach ($srv in $Global:ServerProcesses) {
         try {
             # Use taskkill to kill the process tree (parent and all children)
