@@ -5,12 +5,18 @@ import { streamText, Tool, tool } from "ai";
 import { z } from 'zod';
 import { mcpRegistry } from '@/app/lib/mcpRegistry';
 
+// import from utils2.ts
+import { logSystemPrompt } from '@/lib/utils2';
+import { logMessages } from '@/lib/utils2';
+import { SystemPrompts } from '@/lib/utils2';
+
 // export const runtime = "edge";
 export const runtime = "nodejs";
 export const maxDuration = 30;
 
 // Initialize MCP registry when the module loads
 import { initializeMCPRegistry } from '@/app/lib/init';
+import { log } from 'console';
 
 initializeMCPRegistry().catch(console.error);
 
@@ -81,6 +87,11 @@ export async function POST(req: Request) {
     const mcpTools = mcpRegistry.getTools();
     console.log('mcpTools:', mcpTools);
 
+    const systemPrompt = SystemPrompts.TOOL_SELECTION_1;
+
+    logSystemPrompt(systemPrompt);
+    logMessages(messages);
+
     const result = streamText({
       // model: openai("gpt-4o"),
       model: groq("meta-llama/llama-4-scout-17b-16e-instruct"),
@@ -95,7 +106,7 @@ export async function POST(req: Request) {
       messages,
       // forward system prompt and tools from the frontend
       toolCallStreaming: true,
-      system,
+      system: systemPrompt,
       tools: {
         ...frontendTools(tools),
         ...otherTools,

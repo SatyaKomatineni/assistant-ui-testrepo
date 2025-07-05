@@ -28,6 +28,7 @@ class MCPRegistry {
   private static instance: MCPRegistry;
   private clients: Map<string, MCPClient> = new Map();
   private configs: MCPClientConfig[] = [];
+  private bInitialized = false;
 
   private constructor() {}
 
@@ -42,8 +43,16 @@ class MCPRegistry {
     this.configs = configs;
   }
 
+  isInitialized(): boolean {
+    return this.bInitialized;
+  }
+
   // ['/Users/duanewood/dev/sandbox/mcp/mcp-demo-typescript/dist/server.js'],
   async initialize() {
+    if (this.bInitialized) {
+      console.warn('MCPRegistry is already initialized');
+      return;
+    } 
     for (const config of this.configs) {
       try {
         let transport;
@@ -75,6 +84,7 @@ class MCPRegistry {
         console.error(`Failed to initialize MCP client of type ${config.type}:`, error);
       }
     }
+    this.bInitialized = true;
   }
 
   getTools(): Record<string, Tool> {

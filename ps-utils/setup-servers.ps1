@@ -16,6 +16,7 @@
 #
 # Fixes:
 # 1. confirmation prompts for starting/stopping all servers 7/5/2025
+# 2. Start-Server-By-Name function to start specific servers by name 7/5/2025
 # **************************************************************************
 
 # Global variable to store server info
@@ -26,7 +27,9 @@ $Global:ServerScripts = @(
     'start-ux.ps1',
     'C:\satya\data\code\mcp-servers-testrepo\mcp-claims-python\runclaims-http.ps1',
     'C:\satya\data\code\mcp-servers-testrepo\mcp-claims-python\runinspector.ps1',
-    'C:\satya\data\code\mcp-servers-testrepo\mcp-cmdb-python\runcmdb-http.ps1'
+    'C:\satya\data\code\mcp-servers-testrepo\mcp-cmdb-python\runcmdb-http.ps1',
+    'C:\satya\data\code\mcp-servers-testrepo\mcp-provider-python\runprovider-http.ps1',
+    'C:\satya\data\code\mcp-servers-testrepo\mcp-prompts-python\runprompts-http.ps1'
     # Add more: 'start-api.ps1', etc.
 )
 

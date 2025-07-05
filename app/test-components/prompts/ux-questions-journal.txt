@@ -1,3 +1,8 @@
+6/25
+************************
+1. How can I integrate selected mcp servers to the chat
+2. How can I modify the input with buttons? or add controls to it.
+
 6/24/25:
 React Component Model
 **********************

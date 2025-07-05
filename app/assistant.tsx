@@ -10,7 +10,7 @@ import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbP
 
 export const Assistant = () => {
   const runtime = useChatRuntime({
-    api: "/api/chat",
+    api: "/api/chat"
   });
 
   return (
