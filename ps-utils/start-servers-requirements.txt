@@ -1,0 +1,27 @@
+Goal
+**********************
+1. write a  powershell script to start the servers
+2. use a controlling shell to start the servers in parallel shells
+3. list the servers that are started in the controlling shell and their process IDs
+4. prompt the running servers to stop
+5. wait for the servers to stop
+6. confirm that the servers have stopped    
+
+How to write the script
+**********************
+1. Encapsulate these steps in a function.
+3. Make the functions globally available in the controlling shell.
+4. Also remember the server names and their process IDs in a global variable.
+5. The global functions are:
+6. `Start-Servers` to start the servers.
+7. `Stop-Servers` to stop the servers.
+8. `List-Servers` to list the servers and their process IDs.
+9. `stop-server-by-name` to stop a server by its name after prompting to select the server.
+10. write a function start-process that takes a command and arguments, starts the process, and returns the process ID.
+11. Fill the start-servers method with a sample start server command.
+12. Also write a function that can prompt me the names of the global functions and their descriptions so that I can use them interactively.
+13. Use comments to explain each step of the script.
+
+Name of the script
+**********************
+The script should be named `start-servers.ps1`.
