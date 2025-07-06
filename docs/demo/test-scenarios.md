@@ -82,3 +82,20 @@ Mixed:
 9. What is the average memory size of the production database server?
 10. List all available tools for interacting with the MCP servers.
 
+<!-- ********************* -->
+# Run 1 observations
+<!-- ********************* -->
+
+1. Failed a few times
+2. captured the log in a file
+
+<!-- ********************* -->
+## Failures
+<!-- ********************* -->
+
+1. Convert 100 Fahrenheit to Celsius: empty restult. 
+2. try that again: Lot of tool output spitted out with answer
+3. prompt ones are failing often
+4. Failed with no output
+   1. Search for prompts containing the word "documentation".
+   2. Show me the claim with ID C999 (nonexistent claim).
