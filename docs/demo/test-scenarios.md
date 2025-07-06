@@ -16,6 +16,8 @@ Ask 1:
 5. Just keep the questions under 1 heading
 6. Do not delete this prompt. Keep it in the file.
 7. Add the generated suite at the bottom of this file
+8. Lead off the test suite with a few internal knowledge questions that don't result in tool selection
+9. Produce 25 questions
 
 <!-- ********************* -->
 # MCP Tool descriptions
@@ -23,12 +25,12 @@ Ask 1:
 
 These are the available tools to the Chat
 
-lookup_claim: Look up a medical claim by its ID.
-lookup_system_by_id: Look up a system by its ID.
-lookup_provider: Look up a healthcare provider by their National Provider Identifier (NPI).
-search_prompts: Search for prompts containing specific words
-weather: Get the weather in a location (Fahrenheit)
-convertFahrenheitToCelsius: Convert a temperature from Fahrenheit to Celsius
+1. lookup_claim: Look up a medical claim by its ID.
+2. lookup_system_by_id: Look up a system by its ID.
+3. lookup_provider: Look up a healthcare provider by their National Provider Identifier (NPI).
+4. search_prompts: Search for prompts containing specific words
+5. weather: Get the weather in a location (Fahrenheit)
+6. convertFahrenheitToCelsius: Convert a temperature from Fahrenheit to Celsius
 
 <!-- ********************* -->
 # Test Suite: Tool Selection and LLM Knowledge
@@ -36,24 +38,47 @@ convertFahrenheitToCelsius: Convert a temperature from Fahrenheit to Celsius
 
 Below is a single, interspersed list of practical questions designed to test both tool selection and LLM internal knowledge. The questions are mixed so you can observe the tool selection aspect clearly.
 
-1. What is the weather in San Francisco?
+To start off:
+1. hello there how are you
+2. Can you tell me the tools you have
+
+
+Basics:
+1. what is deepest ocean?
+2. What is the capital of France?
+3. 100C to F
+4. What are vaious oak tree species?
+
+Specific:
+1. Show me the details for the claim with ID `C003`.
 2. Who is the provider with NPI `1234567890`?
-3. Who is the current president of the United States?
-4. Show me the details for the claim with ID `C003`.
-5. What is the capital of France?
-6. What is the operating system of the system with ID `web-prod-01`?
-7. Convert 100 Fahrenheit to Celsius.
-8. Find all prompts related to "security".
-9. Explain the difference between HTTP and HTTPS.
-10. What is the status of the medical claim with ID `C001`?
-11. List the specialties of the provider with NPI `3456789012`.
-12. What are some best practices for writing secure code?
-13. Give me the details of the system with ID `dev-01`.
-14. Search for prompts containing the word "documentation".
-15. Show me the claim with ID `C999` (nonexistent claim).
-16. What is the weather on Mars?
-17. Convert -40 Fahrenheit to Celsius.
-18. Find prompts containing the word "unicorn".
-19. Summarize the Agile software development methodology.
-20. Who is the provider with NPI `0000000000` (nonexistent provider)?
+3. What is the operating system of the system with ID `web-prod-01`?
+4. Find prompts containing the word "unicorn".
+5. What is the weather in San Francisco?
+
+Revert to General:
+1. Difference between water and live oak? 
+2.  Who is the current president of the United States?
+3.  Explain the difference between HTTP and HTTPS.
+
+Back to some specifics:
+1. What is the status of the medical claim with ID `C001`?
+2. List the specialties of the provider with NPI `3456789012`.
+3. Give me the details of the system with ID `dev-01`.
+4. Search for prompts containing the word "documentation".
+5. Show me the claim with ID `C999` (nonexistent claim).
+6. What is the weather on Mars?
+7. Convert -40 Fahrenheit to Celsius.
+
+Mixed:
+1. What are some best practices for writing secure code?
+2. Summarize the Agile software development methodology.
+3. Find all prompts related to "security".
+4. Who is the provider with NPI `0000000000` (nonexistent provider)?
+5. Name three programming languages commonly used for web development.
+6. What is the boiling point of water in Celsius?
+7. Who wrote the play "Romeo and Juliet"?
+8. Convert 100 Fahrenheit to Celsius.
+9. What is the average memory size of the production database server?
+10. List all available tools for interacting with the MCP servers.
 
