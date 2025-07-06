@@ -10,6 +10,7 @@
 3. init...mcp..servers.md
 4. notes.md
 5. demo-data.md
+6. route.ts
 
 <!-- ********************* -->
 # Useful scripts
