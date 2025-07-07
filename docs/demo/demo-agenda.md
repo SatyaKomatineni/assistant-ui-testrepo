@@ -95,6 +95,8 @@ Goal:
 1. [Primary official site for MCP](https://modelcontextprotocol.io/introduction). Entry point for how to write mcp servers, list of public servers, various transports, security protocols, pointers to SDK sites.
 2. [MCP SDK github](https://github.com/modelcontextprotocol/python-sdk). FastMCP SDK site. Has a great readme file to do your own mcp server.
 3. [Function calling: openai](https://platform.openai.com/docs/guides/function-calling?utm_source=chatgpt.com&api-mode=chat). The protocol and how it works, expectations, limitations
-4. [ReACT at Langchain](https://python.langchain.com/api_reference/langchain/agents/langchain.agents.react.base.ReActChain.html). To see if ReAct can be used as a function calling alternative.
+4. [ReACT at Langchain](https://python.langchain.com/api_reference/langchain/agents/langchain.agents.react.base.ReActChain.html). To see if ReAct can be used as a function calling alternative. It is deprecated in favor of LangGraph. One less choice.
 5. [LangGraph](https://www.langchain.com/langgraph). LangGraph page for a more deterministic function calling behavior
 6. [Function calling at LangChain](https://python.langchain.com/docs/how_to/function_calling)
+7. [Assistant UI Homepage](https://www.assistant-ui.com/). This is the UX that is used. assistant-ui is the TypeScript/React library for AI Chat. Built on shadcn/ui and Tailwind.
+8. [Assistant ui docs](https://www.assistant-ui.com/docs/getting-started)
