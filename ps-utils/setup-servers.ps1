@@ -24,8 +24,8 @@ $Global:ServerProcesses = @()
 
 # Server map: define all server scripts here
 $Global:ServerScripts = @(
-    'start-ux-with-log.ps1',
-#   'start-ux.ps1',
+#    'start-ux-with-log.ps1',
+    'start-ux.ps1',
     'C:\satya\data\code\mcp-servers-testrepo\mcp-claims-python\runclaims-http.ps1',
     'C:\satya\data\code\mcp-servers-testrepo\mcp-claims-python\runinspector.ps1',
     'C:\satya\data\code\mcp-servers-testrepo\mcp-cmdb-python\runcmdb-http.ps1',
