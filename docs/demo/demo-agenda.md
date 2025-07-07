@@ -10,6 +10,7 @@
 2. Agenda 2: Show Code how it works
 3. Agenda 3: Demo of MCP Servers interacting with Chat
 4. Agenda 4: References
+5. Agenda 5: Bonus (Surprise)
 
 <!-- ********************* -->
 # Agenda 2: Show How code works
@@ -104,4 +105,15 @@ Goal:
 **During Demo:**
 1. [Inspector](http://127.0.0.1:6274/)
 2. [Assistant UI](http://127.0.0.1:3000)
+
+<!-- ********************* -->
+# Bonuse Agenda: Exercising Github Agent
+<!-- ********************* -->
+
+1. Requirements for setup servers, a powershel script. [start-servers-requirements.txt](https://github.com/SatyaKomatineni/assistant-ui-testrepo/blob/ce388c7813f5fe9d0aa0471789e2b02f88e9b97d/ps-utils/start-servers-requirements.txt)
+2. The generated and adjusted file. [setup-servers.ps1](https://github.com/SatyaKomatineni/assistant-ui-testrepo/blob/ce388c7813f5fe9d0aa0471789e2b02f88e9b97d/ps-utils/setup-servers.ps1)
+3. Requirements for writing test suites. [test-scenarios.md](https://github.com/SatyaKomatineni/assistant-ui-testrepo/blob/main/docs/demo/test-scenarios.md)
+4. Requirements for replicating someone else's repo. [git-associate-repo.txt](https://github.com/SatyaKomatineni/LearnPowershell/blob/master/gitutils/git-associate-repo.txt)
+5. Mixing prompt hints and agent mode to work with md files. [Fix headings for readability](https://github.com/SatyaKomatineni/articles-repo/blob/master/.github/prompts/fixh1.prompt.md), and [convert lines to ordered lists](https://github.com/SatyaKomatineni/articles-repo/blob/master/.github/prompts/olist.prompt.md)
+
 
