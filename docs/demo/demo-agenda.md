@@ -90,8 +90,8 @@ Goal:
 <!-- ********************* -->
 
 **My Github Repos for this work**
-1. [UX server using assistant UI: Replicated from Duane's repo](https://github.com/SatyaKomatineni/assistant-ui-testrepo/tree/main)
-2. [Associated MCP Servers repo](https://github.com/SatyaKomatineni/mcp-servers-testrepo)
+1. Repo 1: [UX server using assistant UI: Replicated from Duane's repo](https://github.com/SatyaKomatineni/assistant-ui-testrepo/tree/main)
+2. Repo 2: [Associated MCP Servers repo](https://github.com/SatyaKomatineni/mcp-servers-testrepo)
    
 **Demo links**
 1. [github demo directory](https://github.com/SatyaKomatineni/assistant-ui-testrepo/tree/main/docs/demo)
