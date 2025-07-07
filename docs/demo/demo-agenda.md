@@ -12,22 +12,6 @@
 4. Agenda 4: References
 
 <!-- ********************* -->
-# Key  URLs
-<!-- ********************* -->
-
-**Demo links**
-1. [github demo directory](https://github.com/SatyaKomatineni/assistant-ui-testrepo/tree/main/docs/demo)
-2. [Demo agenda: this page](https://github.com/SatyaKomatineni/assistant-ui-testrepo/blob/main/docs/demo/demo-agenda.md)
-3. [Test suites](https://github.com/SatyaKomatineni/assistant-ui-testrepo/blob/main/docs/demo/test-scenarios.md)
-4. [MCP Server Data](https://github.com/SatyaKomatineni/assistant-ui-testrepo/blob/main/docs/demo/demo-data.md)
-5. [Duane's notes.md](https://github.com/SatyaKomatineni/mcp-servers-testrepo/blob/main/docs/notes.md)
-6. [Log file](https://github.com/SatyaKomatineni/mcp-servers-testrepo/blob/main/docs/ux-server-run1.log)
-
-**During Demo:**
-1. [Inspector](http://127.0.0.1:6274/)
-2. [Assistant UI](http://127.0.0.1:3000)
-
-<!-- ********************* -->
 # Agenda 2: Show How code works
 <!-- ********************* -->
 
@@ -76,7 +60,7 @@ Goal:
 3. Bring up Assistatnt UI: [Access the Assistant UI](http://127.0.0.1:3000)
 4. Run through some preliminary tests
 5. Use the test scripts. [Test Scripts](https://github.com/SatyaKomatineni/assistant-ui-testrepo/blob/main/docs/demo/test-scenarios.md)
-6. Show the log file to show interactions [Log file](https://github.com/SatyaKomatineni/mcp-servers-testrepo/blob/main/docs/ux-server-run1.log)
+6. Show the log file to show interactions [Log file](https://github.com/SatyaKomatineni/assistant-ui-testrepo/blob/main/docs/demo/ux-server-run1.log)
 
 
 <!-- ********************* -->
@@ -100,3 +84,20 @@ Goal:
 6. [Function calling at LangChain](https://python.langchain.com/docs/how_to/function_calling)
 7. [Assistant UI Homepage](https://www.assistant-ui.com/). This is the UX that is used. assistant-ui is the TypeScript/React library for AI Chat. Built on shadcn/ui and Tailwind.
 8. [Assistant ui docs](https://www.assistant-ui.com/docs/getting-started)
+
+<!-- ********************* -->
+# Key  URLs
+<!-- ********************* -->
+
+**Demo links**
+1. [github demo directory](https://github.com/SatyaKomatineni/assistant-ui-testrepo/tree/main/docs/demo)
+2. [Demo agenda: this page](https://github.com/SatyaKomatineni/assistant-ui-testrepo/blob/main/docs/demo/demo-agenda.md)
+3. [Test suites](https://github.com/SatyaKomatineni/assistant-ui-testrepo/blob/main/docs/demo/test-scenarios.md)
+4. [MCP Server Data](https://github.com/SatyaKomatineni/assistant-ui-testrepo/blob/main/docs/demo/demo-data.md)
+5. [Duane's notes.md](https://github.com/SatyaKomatineni/mcp-servers-testrepo/blob/main/docs/notes.md)
+6. [Log file](https://github.com/SatyaKomatineni/assistant-ui-testrepo/blob/main/docs/demo/ux-server-run1.log)
+
+**During Demo:**
+1. [Inspector](http://127.0.0.1:6274/)
+2. [Assistant UI](http://127.0.0.1:3000)
+
