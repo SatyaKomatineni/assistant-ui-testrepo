@@ -114,7 +114,7 @@ Goal:
 2. The generated and adjusted file. [setup-servers.ps1](https://github.com/SatyaKomatineni/assistant-ui-testrepo/blob/ce388c7813f5fe9d0aa0471789e2b02f88e9b97d/ps-utils/setup-servers.ps1)
 3. Requirements for writing test suites. [test-scenarios.md](https://github.com/SatyaKomatineni/assistant-ui-testrepo/blob/main/docs/demo/test-scenarios.md)
 4. Requirements for replicating someone else's repo. [git-associate-repo.txt](https://github.com/SatyaKomatineni/LearnPowershell/blob/master/gitutils/specs/git-associate-repo.txt)
-5. Mixing prompt hints and agent mode to work with md files. [Fix headings for readability](https://github.com/SatyaKomatineni/articles-repo/blob/master/.github/prompts/fixh1.prompt.md), and [convert lines to ordered lists](https://github.com/SatyaKomatineni/articles-repo/blob/master/.github/prompts/olist.prompt.md)
+5. **Mixing prompt hints and agent mode** to work with md files. [Fix headings for readability](https://github.com/SatyaKomatineni/articles-repo/blob/master/.github/prompts/fixh1.prompt.md), and [convert lines to ordered lists](https://github.com/SatyaKomatineni/articles-repo/blob/master/.github/prompts/olist.prompt.md)
 6. A way to list and update system paths. [pathutils requirements.txt](https://github.com/SatyaKomatineni/LearnPowershell/blob/master/gitutils/specs/pathutils.txt)
 7. [pathutils.ps1](https://github.com/SatyaKomatineni/LearnPowershell/blob/master/gitutils/pathutils.ps1)
 
